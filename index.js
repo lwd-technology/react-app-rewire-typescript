@@ -19,12 +19,12 @@ function rewireTypescript(config, env, typescriptLoaderOptions = {}) {
   )
   fileLoader.exclude.push(typescriptExtension)
 
-  const babelRules = getBabelLoader(config.module.rules)
+  const babelLoader = getBabelLoader(config.module.rules)
 
   const typescriptRules = {
     test: typescriptExtension,
     use: [
-      ...babelRules.use,
+      babelLoader,
       { loader: 'ts-loader', options: typescriptLoaderOptions }
     ]
   }
