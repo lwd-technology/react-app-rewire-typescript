@@ -1,0 +1,40 @@
+{
+  "name": "react-app-rewire-typescript",
+  "version": "1.0.0",
+  "description": "Add ts-loader to a react-app-rewired config.",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": ["prettier --write", "git add"],
+    "*.json": ["prettier --parser json --write", "git add"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icopp/react-app-rewire-typescript.git"
+  },
+  "keywords": ["typescript", "react-app-rewired"],
+  "author": "Ian Copp <copp.ian@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icopp/react-app-rewire-typescript/issues"
+  },
+  "homepage": "https://github.com/icopp/react-app-rewire-typescript#readme",
+  "devDependencies": {
+    "eslint": "^4.7.0",
+    "eslint-config-prettier": "^2.5.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.1",
+    "prettier": "^1.7.0"
+  },
+  "dependencies": {
+    "ts-loader": "^2.3.7"
+  }
+}
