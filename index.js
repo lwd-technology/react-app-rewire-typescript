@@ -2,6 +2,12 @@ const path = require('path')
 const { getLoader, getBabelLoader } = require('react-app-rewired')
 
 function rewireTypescript(config, env, typescriptLoaderOptions = {}) {
+  config.resolve.extensions = (config.resolve.extensions || []).concat([
+    '.web.ts',
+    '.ts',
+    '.tsx'
+  ])
+
   const typescriptExtension = /\.tsx?$/
 
   const fileLoader = getLoader(
