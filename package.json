@@ -1,6 +1,6 @@
 {
   "name": "react-app-rewire-typescript",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Add ts-loader to a react-app-rewired config.",
   "main": "index.js",
   "files": ["index.js"],
@@ -26,19 +26,19 @@
   "homepage":
     "https://github.com/lwd-technology/react-app-rewire-typescript#readme",
   "devDependencies": {
-    "eslint": "^4.7.0",
-    "eslint-config-prettier": "^2.5.0",
+    "eslint": "^4.10.0",
+    "eslint-config-prettier": "^2.6.0",
     "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-prettier": "^2.3.1",
-    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.14.3",
-    "lint-staged": "^4.2.1",
-    "prettier": "^1.7.0"
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.7.1"
   },
   "dependencies": {
-    "ts-loader": "^2.3.7"
+    "ts-loader": "^3.1.1"
   }
 }
