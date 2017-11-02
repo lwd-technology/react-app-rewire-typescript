@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const { getLoader, getBabelLoader } = require('react-app-rewired')
+const { getBabelLoader } = require('react-app-rewired')
 
 /**
  * @param {Object} rule
