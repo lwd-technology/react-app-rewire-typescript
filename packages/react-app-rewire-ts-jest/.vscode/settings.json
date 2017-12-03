@@ -1,0 +1,16 @@
+{
+  // Always auto-format if possible on save.
+  "editor.formatOnSave": true,
+
+  // Enable auto-formatting for these languages.
+  "javascript.format.enable": true,
+
+  // Use `prettier-eslint` instead of just `prettier`. This automatically pulls
+  // in `eslint` settings and parsing.
+  "prettier.eslintIntegration": true,
+
+  // Exclude these folders from default searches.
+  "search.exclude": {
+    "**/node_modules": true
+  }
+}
