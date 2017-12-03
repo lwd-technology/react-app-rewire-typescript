@@ -1,11 +1,24 @@
 {
-	"private": true,
+  "private": true,
   "name": "react-app-rewire-typescript-packages",
   "scripts": {
+    "precommit": "lint-staged"
   },
-	"devDependencies": {
-		"lerna": "^2.5.1"
-	},
+  "lint-staged": {
+    "packages/*/*.js": [
+      "prettier --write",
+      "git add"
+    ],
+    "packages/*/*.json": [
+      "prettier --parser json --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lerna": "^2.5.1",
+    "lint-staged": "^6.0.0"
+  },
   "workspaces": [
     "packages/*"
   ]
