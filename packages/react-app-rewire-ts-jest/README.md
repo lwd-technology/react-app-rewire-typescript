@@ -17,3 +17,5 @@ module.exports = {
 }
 ```
 
+## NOTES
+Version is the react-scripts version it was tested with.
