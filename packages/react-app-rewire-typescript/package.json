@@ -1,0 +1,35 @@
+{
+  "name": "react-app-rewire-typescript",
+  "version": "2.0.2",
+  "description": "Add ts-loader to a react-app-rewired config.",
+  "main": "index.js",
+  "files": ["index.js"],
+  "repository": {
+    "type": "git",
+    "url":
+      "git+https://github.com/lwd-technology/react-app-rewire-typescript.git"
+  },
+  "keywords": ["typescript", "ts-loader", "webpack", "react-app-rewired"],
+  "author": "Ian Copp <ian@wolflair.com>",
+  "license": "MIT",
+  "bugs": {
+    "url":
+      "https://github.com/lwd-technology/react-app-rewire-typescript/issues"
+  },
+  "homepage":
+    "https://github.com/lwd-technology/react-app-rewire-typescript#readme",
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "prettier": "^1.7.1"
+  },
+  "dependencies": {
+    "ts-loader": "^3.1.1"
+  }
+}
