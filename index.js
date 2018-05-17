@@ -57,7 +57,7 @@ function rewireTypescript(config, env, typescriptLoaderOptions = {}) {
   let scriptsIndex = process.argv.indexOf('--scripts-version');
   let scripts = 'react-scripts';
   if (scriptsIndex > -1 && scriptsIndex + 1 <= process.argv.length) {
-    scripts = process.argv[scriptsindex + 1];
+    scripts = process.argv[scriptsIndex + 1];
   }
   let paths = require(`${scripts}/config/paths`)
   if (paths) {
