@@ -54,7 +54,12 @@ function rewireTypescript(config, env, typescriptLoaderOptions = {}) {
   // Monkey patch react-scripts paths to use just `src` instead of
   // `src/index.js` specifically. Hopefully this can get removed at some point.
   // @see https://github.com/facebookincubator/create-react-app/issues/3052
-  let paths = require('react-scripts/config/paths')
+  let scriptsIndex = process.argv.indexOf('--scripts-version');
+  let scripts = 'react-scripts';
+  if (scriptsIndex > -1 && scriptsIndex + 1 <= process.argv.length) {
+    scripts = process.argv[scriptsIndex + 1];
+  }
+  let paths = require(`${scripts}/config/paths`)
   if (paths) {
     paths.appIndexJs = path.resolve(fs.realpathSync(process.cwd()), 'src')
   }
