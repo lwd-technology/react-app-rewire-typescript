@@ -13,18 +13,15 @@
   },
   "repository": {
     "type": "git",
-    "url":
-      "git+https://github.com/lwd-technology/react-app-rewire-typescript.git"
+    "url": "git+https://github.com/lwd-technology/react-app-rewire-typescript.git"
   },
   "keywords": ["typescript", "ts-loader", "webpack", "react-app-rewired"],
   "author": "Ian Copp <ian@wolflair.com>",
   "license": "MIT",
   "bugs": {
-    "url":
-      "https://github.com/lwd-technology/react-app-rewire-typescript/issues"
+    "url": "https://github.com/lwd-technology/react-app-rewire-typescript/issues"
   },
-  "homepage":
-    "https://github.com/lwd-technology/react-app-rewire-typescript#readme",
+  "homepage": "https://github.com/lwd-technology/react-app-rewire-typescript#readme",
   "devDependencies": {
     "eslint": "^4.10.0",
     "eslint-config-prettier": "^2.6.0",
@@ -39,6 +36,6 @@
     "prettier": "^1.7.1"
   },
   "dependencies": {
-    "ts-loader": "^3.1.1"
+    "ts-loader": "^4.4.2"
   }
 }
